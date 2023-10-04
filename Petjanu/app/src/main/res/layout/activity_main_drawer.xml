@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Página Inicial" />
+    <item
+        android:id="@+id/nav_adoption"
+        android:title="Adoção" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Perfil" />
+    <!-- Adicione mais itens conforme necessário -->
+</menu>

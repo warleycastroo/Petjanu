@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F2F2F2">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pet" <!-- Substitua 'your_logo' pelo nome da sua imagem de logo -->
+     />
+
+    <!-- Tipo de Doação (dinheiro ou suprimentos) -->
+    <RadioGroup
+        android:id="@+id/donationTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/moneyDonationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doação em Dinheiro" />
+
+        <RadioButton
+            android:id="@+id/supplyDonationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doação de Suprimentos" />
+    </RadioGroup>
+
+    <!-- Campo para digitar o valor da doação (apenas para doações em dinheiro) -->
+    <EditText
+        android:id="@+id/donationAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor da Doação"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/donationTypeRadioGroup"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <!-- Botão de doação -->
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="395dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/donationAmountEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="418dp"
+        android:layout_marginBottom="42dp"
+        android:background="#2196F3"
+        android:text="Doar"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

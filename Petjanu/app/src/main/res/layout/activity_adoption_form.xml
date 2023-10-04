@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F2F2F2">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pet"
+        android:background="@drawable/circular_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nome do formulário -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulário de Adoção"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Nome -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo"
+        android:inputType="text"
+        android:backgroundTint="#FF5722"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Endereço -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Endereço Completo"
+        android:inputType="text"
+        android:backgroundTint="#FF5722"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão para fazer upload do comprovante de residência -->
+    <Button
+        android:id="@+id/uploadProofButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="Upload do Comprovante de Residência"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Visualização do comprovante de residência (após o upload) -->
+    <ImageView
+        android:id="@+id/proofOfResidenceImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- Espaço entre os botões -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Botão de envio do formulário -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="Enviar Formulário"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receber Notificações"
+        android:layout_gravity="center_vertical"
+        android:checked="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
+
+
+
+    <!-- Preferências de Busca -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferências de Busca" />
+    <!-- Adicione aqui opções para as preferências de busca, como filtros e configurações -->
+
+</LinearLayout>

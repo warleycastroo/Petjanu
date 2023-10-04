@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Nome do evento -->
+    <TextView
+        android:id="@+id/eventNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Evento"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Botão de participação -->
+    <Button
+        android:id="@+id/participateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participar"
+        android:layout_below="@+id/eventNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão de compartilhamento -->
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar"
+        android:layout_below="@+id/participateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Outras informações do evento podem ser adicionadas aqui -->
+</RelativeLayout>

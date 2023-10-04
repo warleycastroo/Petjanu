@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.petjanu">
+
+    <!-- Permissões necessárias, como acesso à Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Adicione outras permissões necessárias aqui -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Atividade principal do aplicativo -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Atividade de Boas-Vindas -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Boas-Vindas" />
+
+        <!-- Atividade de Cadastro e Perfil do Usuário -->
+        <activity
+            android:name=".SignupActivity"
+            android:label="Cadastro e Perfil do Usuário" />
+
+        <!-- Atividade de Pesquisa -->
+        <activity
+            android:name=".SearchActivity"
+            android:label="Pesquisa" />
+
+        <!-- Atividade de Perfil do Animal -->
+        <activity
+            android:name=".AnimalProfileActivity"
+            android:label="Perfil do Animal" />
+
+        <!-- Atividade de Chat Integrado -->
+        <activity
+            android:name=".ChatActivity"
+            android:label="Chat Integrado" />
+
+        <!-- Atividade de Eventos e Feiras de Adoção -->
+        <activity
+            android:name=".EventsActivity"
+            android:label="Eventos e Feiras de Adoção" />
+
+        <!-- Atividade de Processo de Adoção -->
+        <activity
+            android:name=".AdoptionProcessActivity"
+            android:label="Processo de Adoção" />
+
+        <!-- Atividade de Doações e Voluntariado -->
+        <activity
+            android:name=".DonationsActivity"
+            android:label="Doações e Voluntariado" />
+
+        <!-- Atividade de Dicas de Cuidados e Treinamento -->
+        <activity
+            android:name=".CareAndTrainingActivity"
+            android:label="Dicas de Cuidados e Treinamento" />
+
+        <!-- Atividade de Configurações e Suporte -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Configurações" />
+
+        <!-- Atividade de Suporte -->
+        <activity
+            android:name=".SupportActivity"
+            android:label="Suporte" />
+
+        <!-- Adicione outros componentes, serviços, receptores ou atividades conforme necessário -->
+
+    </application>
+
+</manifest>

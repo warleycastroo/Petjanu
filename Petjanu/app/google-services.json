@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208950496340",
+    "project_id": "petjanu-7194a",
+    "storage_bucket": "petjanu-7194a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208950496340:android:70677d684c01b0feb5f1c1",
+        "android_client_info": {
+          "package_name": "com.example.petjanu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208950496340-qjfsh9hjrgkvk7ntlcbjqac14qes0q9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3-YCtXVg7WF6ZdYS-rxvPROljCjRip3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208950496340-qjfsh9hjrgkvk7ntlcbjqac14qes0q9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

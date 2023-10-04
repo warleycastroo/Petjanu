@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Spinner para o tipo de animal -->
+    <Spinner
+        android:id="@+id/spinnerAnimalType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Animal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Spinner para a raça -->
+    <Spinner
+        android:id="@+id/spinnerBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Raça"
+        android:layout_below="@+id/spinnerAnimalType"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Spinner para o tamanho -->
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tamanho"
+        android:layout_below="@+id/spinnerBreed"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Spinner para a idade -->
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:layout_below="@+id/spinnerSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Botão "Aplicar Filtros" -->
+    <Button
+        android:id="@+id/applyFiltersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicar Filtros"
+        android:layout_below="@+id/spinnerAge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Lista de animais -->
+    <ListView
+        android:id="@+id/animalListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/applyFiltersButton"
+        android:layout_marginTop="20dp" />
+
+    <!-- Spinner para classificar -->
+    <Spinner
+        android:id="@+id/sortBySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Classificar por"
+        android:layout_below="@+id/animalListView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
